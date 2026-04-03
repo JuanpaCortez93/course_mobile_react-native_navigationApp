@@ -7,9 +7,11 @@ const App = () => {
       <View className="mt-6 mx-2.5">
         <Text style={{ fontFamily: "WorkSans-Black" }}>Hello world!</Text>
 
-        <Text className="font-work-black">Hello world!</Text>
-        <Text className="font-work-light">Hello world!</Text>
-        <Text className="font-work-medium">Hello world!</Text>
+        <Text className="font-work-black text-primary">Hello world!</Text>
+        <Text className="font-work-medium text-secondary-200">
+          Hello world!
+        </Text>
+        <Text className="font-work-light text-tertiary">Hello world!</Text>
       </View>
     </SafeAreaView>
   );
