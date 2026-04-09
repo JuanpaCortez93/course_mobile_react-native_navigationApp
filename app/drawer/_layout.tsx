@@ -1,20 +1,32 @@
+import { Ionicons } from "@expo/vector-icons";
 import { Drawer } from "expo-router/drawer";
 
 const DrawerLayout = () => {
   return (
-    <Drawer>
+    <Drawer
+      screenOptions={{
+        overlayColor: "rgba(0,0,0,0.4)",
+        drawerActiveTintColor: "indigo",
+      }}
+    >
       <Drawer.Screen
         name="user/index" // This is the name of the page and must match the url from root
         options={{
           drawerLabel: "User",
-          title: "usuario",
+          title: "Usuario",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="person-circle-outline" size={size} color={color} />
+          ),
         }}
       />
       <Drawer.Screen
         name="schedule/index" // This is the name of the page and must match the url from root
         options={{
           drawerLabel: "Schedule",
-          title: "horarios",
+          title: "Horarios",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="calendar-outline" size={size} color={color} />
+          ),
         }}
       />
     </Drawer>
