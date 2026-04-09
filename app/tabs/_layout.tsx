@@ -5,6 +5,15 @@ const TabsLayout = () => {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: "blue" }}>
       <Tabs.Screen
+        name="(stack)"
+        options={{
+          title: "Stack Screen",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome size={28} name="address-book" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="home/index"
         options={{
           title: "Home Screen",
