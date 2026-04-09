@@ -3,7 +3,13 @@ import { Tabs } from "expo-router";
 
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "blue" }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "indigo",
+        headerShown: true,
+        tabBarStyle: { backgroundColor: "black" },
+      }}
+    >
       <Tabs.Screen
         name="(stack)"
         options={{
