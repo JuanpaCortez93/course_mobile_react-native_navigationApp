@@ -10,13 +10,13 @@ const ProductsScreen = () => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <View className="mt-10">
-            <Text className="text-2xl font-work-black">{item.title}</Text>
+            <Text className="text-2xl font-work-black me-4">{item.title}</Text>
             <Text className="">{item.description}</Text>
 
-            <View className="flex flex-row justify-between mt-2">
+            <View className="flex flex-row justify-between mt-2 me-4">
               <Text className="font-work-black">{item.price}</Text>
               <Link
-                href={`/(stack)/products/${item.id}` as Href} 
+                href={`/(stack)/products/${item.id}` as Href}
                 className="text-primary"
               >
                 Details

@@ -38,6 +38,7 @@ const CustomButton = React.forwardRef(
           className={`p-3 ${className}`}
           onPress={onPress}
           onLongPress={onLongPress}
+          ref={ref}
         >
           <Text className="text-center ${textColor} font-work-medium">
             {children}
@@ -52,6 +53,7 @@ const CustomButton = React.forwardRef(
           className={`p-3 rounded-md ${btnColor} active:opacity-90 ${className}`}
           onPress={onPress}
           onLongPress={onLongPress}
+          ref={ref}
         >
           <Text className="text-white text-center">{children}</Text>
         </Pressable>
