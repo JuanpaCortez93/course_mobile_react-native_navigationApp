@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+﻿# Navigation and Styles in React Native with Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This document covers the main topics of the section. Here we will work with global styles and an application structure that allows us to build navigation like a Stack or card deck.
 
-## Get started
+## In this section we will cover
+
+Specifically, we will look at:
+
+- Nativewind
+- StackNavigation
+- Passing arguments between screens
+- Custom buttons
+- Directory structure
+- Custom themes and fonts
+- Custom colors
+- Multiple layouts
+- More
+
+This is an important section for any application because screen navigation is one of the basic ways to display new content in mobile apps.
+
+## What you will learn
+
+In this section, we will work on global styles and our application structure to support Stack-style or card-deck navigation. You will learn how to move between screens, pass data between them, and create reusable visual components.
+
+## Local usage
+
+To use this project locally, use `react-native expo` and the package manager is `bun`.
+
+### Basic commands
 
 1. Install dependencies
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
 ```bash
-npm run reset-project
+bun install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Start the application
 
-## Learn more
+```bash
+bun expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Application structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The project uses a folder structure designed for route-based navigation and multiple layouts. This makes it easier to organize screens, tabs, drawers, and stacks.
 
-## Join the community
+## Why it is important
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Navigation between screens is key in mobile applications because it allows new content to be shown naturally. Mastering global styles and app structure will help you build more consistent and easier-to-maintain experiences.
