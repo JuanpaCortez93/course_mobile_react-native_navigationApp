@@ -9,13 +9,13 @@ const HomeScreen = () => {
       <View className="px-10 mt-5">
         <CustomButton
           children="Products"
-          onPress={() => router.push("/tabs/(stack)/products" as Href)}
+          onPress={() => router.push("/drawer/tabs/(stack)/products" as Href)}
           className="mb-10"
         />
 
         <CustomButton
           children="Profile"
-          onPress={() => router.push("/tabs/(stack)/profile" as Href)}
+          onPress={() => router.push("/drawer/tabs/(stack)/profile" as Href)}
           color="secondary"
           variant="text-only"
           className="mb-10"
@@ -23,13 +23,13 @@ const HomeScreen = () => {
 
         <CustomButton
           children="Settings"
-          onPress={() => router.push("/tabs/(stack)/settings" as Href)}
+          onPress={() => router.push("/drawer/tabs/(stack)/settings" as Href)}
           color="tertiary"
           variant="text-only"
           className="mb-10"
         />
 
-        <Link href={"/tabs/(stack)/products" as Href} asChild>
+        <Link href={"/drawer/tabs/(stack)/products" as Href} asChild>
           <CustomButton children="Products" color="primary" className="mb-10" />
         </Link>
       </View>
